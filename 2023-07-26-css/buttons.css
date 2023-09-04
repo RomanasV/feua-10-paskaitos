@@ -1,0 +1,491 @@
+:root {
+  --color-primary: rgb(44, 15, 140);
+  --color-primary-active: rgb(21, 6, 69);
+  --color-secondary: rgb(224, 120, 0);
+  --color-secondary-active: rgb(146, 78, 0);
+  --color-danger: red;
+  --color-danger-active: rgb(164, 0, 0);
+  --color-success: green;
+  --color-success-active: rgb(0, 76, 0);
+  --color-white: white;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.container {
+  margin-bottom: 30px;
+}
+
+
+/* PIRMAS BŪDAS */
+/* button {
+  background-color: rgb(65, 140, 15);
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid rgb(65, 140, 15);
+  
+  cursor: pointer;
+}
+
+button:hover {
+  color: rgb(65, 140, 15);
+  background-color: transparent;
+}
+
+a.button {
+  background-color: rgb(65, 140, 15);
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid rgb(65, 140, 15);
+
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+a.button:hover {
+  color: rgb(65, 140, 15);
+  background-color: transparent;
+} */
+
+
+
+
+/* ANTRAS BŪDAS */
+/* button,
+a.button {
+  background-color: rgb(65, 140, 15);
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid rgb(65, 140, 15);
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a.button {
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+button:hover,
+a.button:hover {
+  color: rgb(65, 140, 15);
+  background-color: transparent;
+} */
+
+
+/* TREČIAS BŪDAS */
+/* .button-fill {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(65, 140, 15);
+  
+  color: white;
+  background-color: rgb(65, 140, 15);
+}
+
+.button-fill:hover {
+  color: rgb(65, 140, 15);
+  background-color: transparent;
+}
+
+.button-outline {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(65, 140, 15);
+  
+  color: rgb(65, 140, 15);
+  background-color: transparent;
+}
+
+.button-outline:hover {
+  color: white;
+  background-color: rgb(65, 140, 15);
+} */
+
+
+/* KETVIRTAS VARIANTAS */
+/* .button-fill,
+.button-outline {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--color-primary);
+}
+
+.button-fill {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.button-fill:hover {
+  color: var(--color-primary);
+  background-color: transparent;
+}
+
+.button-outline {
+  color: var(--color-primary);
+  background-color: transparent;
+}
+
+.button-outline:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+} */
+
+
+
+/* PENKTAS BŪDAS */
+/* .button {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.button-fill-primary,
+.button-outline-primary {
+  border-color: var(--color-primary);
+}
+
+.button-fill-primary,
+.button-outline-primary:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.button-outline-primary,
+.button-fill-primary:hover {
+  color: var(--color-primary);
+  background-color: transparent;
+}
+
+
+.button-fill-secondary,
+.button-outline-secondary {
+  border-color: var(--color-secondary);
+}
+
+.button-fill-secondary,
+.button-outline-secondary:hover {
+  color: var(--color-white);
+  background-color: var(--color-secondary);
+}
+
+.button-outline-secondary,
+.button-fill-secondary:hover {
+  color: var(--color-secondary);
+  background-color: transparent;
+}
+
+
+.button-fill-danger,
+.button-outline-danger {
+  border-color: var(--color-danger);
+}
+
+.button-fill-danger,
+.button-outline-danger:hover {
+  color: var(--color-white);
+  background-color: var(--color-danger);
+}
+
+.button-outline-danger,
+.button-fill-danger:hover {
+  color: var(--color-danger);
+  background-color: transparent;
+} */
+
+
+
+
+/* ŠEŠTAS BŪDAS */
+/* .button {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.button-primary {
+  border-color: var(--color-primary);
+}
+
+.button-fill.button-primary,
+.button-outline.button-primary:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.button-outline.button-primary,
+.button-fill.button-primary:hover {
+  color: var(--color-primary);
+  background-color: transparent;
+}
+
+.button-secondary {
+  border-color: var(--color-secondary);
+}
+
+.button-fill.button-secondary,
+.button-outline.button-secondary:hover {
+  color: var(--color-white);
+  background-color: var(--color-secondary);
+}
+
+.button-outline.button-secondary,
+.button-fill.button-secondary:hover {
+  color: var(--color-secondary);
+  background-color: transparent;
+}
+
+.button-danger {
+  border-color: var(--color-danger);
+}
+
+.button-fill.button-danger,
+.button-outline.button-danger:hover {
+  color: var(--color-white);
+  background-color: var(--color-danger);
+}
+
+.button-outline.button-danger,
+.button-fill.button-danger:hover {
+  color: var(--color-danger);
+  background-color: transparent;
+} */
+
+
+/* SEPTINTAS BŪDAS */
+/* .button {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  border-style: solid;
+  border-width: 2px;
+  display: inline-block;
+}
+
+.button-primary {
+  border-color: var(--color-primary);
+}
+
+.button-fill.button-primary,
+.button-outline.button-primary:hover {
+  background-color: var(--color-primary);
+}
+
+.button-outline.button-primary,
+.button-fill.button-primary:hover {
+  color: var(--color-primary);
+}
+
+
+
+.button-secondary {
+  border-color: var(--color-secondary);
+}
+
+.button-fill.button-secondary,
+.button-outline.button-secondary:hover {
+  background-color: var(--color-secondary);
+}
+
+.button-outline.button-secondary,
+.button-fill.button-secondary:hover {
+  color: var(--color-secondary);
+}
+
+
+
+.button-danger {
+  border-color: var(--color-danger);
+}
+
+.button-fill.button-danger,
+.button-outline.button-danger:hover {
+  background-color: var(--color-danger);
+}
+
+.button-outline.button-danger,
+.button-fill.button-danger:hover {
+  color: var(--color-danger);
+}
+
+
+.button-success {
+  border-color: var(--color-success);
+}
+
+.button-fill.button-success,
+.button-outline.button-success:hover {
+  background-color: var(--color-success);
+}
+
+.button-outline.button-success,
+.button-fill.button-success:hover {
+  color: var(--color-success);
+}
+
+
+.button-fill,
+.button-outline:hover {
+  color: var(--color-white);
+}
+
+.button-outline,
+.button-fill:hover {
+  background-color: transparent;
+} */
+
+
+
+/* AŠTUNTAS BŪDAS */
+.button-primary {
+  --button-color: var(--color-primary);
+  --button-color-active: var(--color-primary-active);
+}
+
+.button-secondary {
+  --button-color: var(--color-secondary);
+  --button-color-active: var(--color-secondary-active);
+}
+
+.button-danger {
+  --button-color: var(--color-danger);
+  --button-color-active: var(--color-danger-active);
+}
+
+.button-success {
+  --button-color: var(--color-success);
+  --button-color-active: var(--color-success-active);
+}
+
+.button-warning {
+  --button-color: rgb(65, 65, 65);
+  --button-color-active: black;
+}
+
+.button-info {
+  --button-color: rgb(0, 207, 193);
+  --button-color-active: rgb(0, 137, 128);
+}
+
+.button {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--button-color);
+  display: inline-block;
+  /* transition: background-color 0.3s ease, color 0.3s ease; */
+  
+  transition-property: background-color, color, border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  /* transition-delay: 3s; */
+}
+
+.button-fill,
+.button-outline:hover {
+  color: var(--color-white);
+  background-color: var(--button-color);
+}
+
+.button-outline,
+.button-fill:hover {
+  color: var(--button-color);
+  background-color: transparent;
+}
+
+.button-outline:active {
+  background-color: var(--button-color-active);
+  border-color: var(--button-color-active);
+}
+
+.button-fill:active {
+  color: var(--button-color-active);
+  border-color: var(--button-color-active);
+}
+
+.button-large {
+  font-size: 24px;
+}
+
+.button-small {
+  font-size: 10px;
+}
+
+.button-rect {
+  border-radius: 0;
+}
+
+.button-round {
+  border-radius: 50px;
+}

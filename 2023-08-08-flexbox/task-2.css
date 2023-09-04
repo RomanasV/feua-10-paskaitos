@@ -1,0 +1,90 @@
+body {
+  margin-bottom: 1000px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.container {
+  background-color: beige;
+  height: 600px;
+  width: 600px;
+}
+
+
+.container-9 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.container-9 .child-1 {
+  width: 200px;
+  height: 300px;
+}
+
+.container-9 .child-2 {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+}
+
+.container-9 .child-2 .inner-child {
+  height: 100px;
+  width: 100px;
+}
+
+.container-9 .child-3 {
+  height: 200px;
+  width: 200px;
+}
+
+.container-9 .child-4 {
+  display: flex;
+}
+
+.container-9 .child-4 .inner-child {
+  width: 133px;
+  height: 100px;
+}
+
+.container-9 .child-5 {
+  height: 300px;
+  width: 400px;
+}
+
+.container-9 .child-6 {
+  width: 265px;
+  height: 200px;
+}
+
+.container-9 .child-7 {
+  height: 200px;
+  width: 133px;
+}
+
+.container-9 .child-7 .inner-child {
+  height: 100px;
+  width: 135px;
+}

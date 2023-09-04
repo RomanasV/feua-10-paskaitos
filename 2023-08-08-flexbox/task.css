@@ -1,0 +1,192 @@
+body {
+  margin-bottom: 1000px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.container {
+  background-color: beige;
+  height: 600px;
+  width: 600px;
+}
+
+
+.container-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* PIRMAS BŪDAS */
+
+/* .container-1 .child:nth-child(1) {
+  width: 200px;
+  height: 200px;
+}
+
+.container-1 .child:nth-child(2) {
+  width: 400px;
+  height: 200px;
+}
+
+.container-1 .child:nth-child(3) {
+  width: 400px;
+  height: 200px;
+}
+
+.container-1 .child:nth-child(4) {
+  width: 200px;
+  height: 200px;
+}
+
+.container-1 .child:nth-child(5) {
+  width: 200px;
+  height: 200px;
+}
+
+.container-1 .child:nth-child(6) {
+  width: 400px;
+  height: 200px;
+} */
+
+/* ANTRAS BŪDAS */
+/* .container-1 .child:nth-child(1),
+.container-1 .child:nth-child(4),
+.container-1 .child:nth-child(5) {
+  width: 200px;
+  height: 200px;
+}
+
+.container-1 .child:nth-child(2),
+.container-1 .child:nth-child(3),
+.container-1 .child:nth-child(6) {
+  width: 400px;
+  height: 200px;
+} */
+
+
+/* TREČIAS BŪDAS */
+/* .container-1 .child {
+  height: 200px;
+  width: 200px;
+}
+
+.container-1 .child:nth-child(2),
+.container-1 .child:nth-child(3),
+.container-1 .child:nth-child(6) {
+  width: 400px;
+} */
+
+/* KETVIRTAS BŪDAS */
+/* .container-1 .child-small {
+  height: 200px;
+  width: 200px;
+}
+
+.container-1 .child-large {
+  height: 200px;
+  width: 400px;
+} */
+
+
+/* PENKTAS BŪDAS */
+/* .container-1 .blue {
+  height: 200px;
+  width: 200px;
+}
+
+.container-1 .orange {
+  height: 200px;
+  width: 200px;
+}
+
+.container-1 .pink {
+  height: 200px;
+  width: 200px;
+}
+
+.container-1 .red {
+  height: 200px;
+  width: 400px;
+}
+
+.container-1 .green {
+  height: 200px;
+  width: 400px;
+}
+
+.container-1 .purple {
+  height: 200px;
+  width: 400px;
+} */
+
+
+.container-1 .blue,
+.container-1 .orange,
+.container-1 .pink {
+  height: 200px;
+  width: 200px;
+}
+
+.container-1 .red, 
+.container-1 .green, 
+.container-1 .purple {
+  height: 200px;
+  width: 400px;
+}
+
+
+.container-2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-2 .child-1 {
+  width: 600px;
+  height: 300px;
+}
+
+.container-2 .child-2 {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-2 .child-3 {
+  width: 200px;
+  height: 300px;
+}
+
+.container-2 .child-4 {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-child {
+  height: 150px;
+  width: 200px;
+}

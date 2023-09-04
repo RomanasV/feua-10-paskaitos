@@ -1,0 +1,123 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  margin-bottom: 500px;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+
+  color: black;
+  background-color: bisque;
+
+  /* BORDER */
+
+  /* border-top-style: dashed;
+  border-top-color: orange;
+  border-top-width: 10px;
+
+  border-right-style: dotted;
+  border-right-color: purple;
+  border-right-width: 7px;
+
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 5px;
+
+  border-left-style: double;
+  border-left-color: pink;
+  border-left-width: 15px; */
+
+  
+  /* border-style: dashed dotted solid double;
+  border-width: 10px 7px 5px 15px;
+  border-color: orange purple black pink; */
+
+  border: 5px solid pink;
+
+
+  /* PADDING */
+  /* padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-left: 30px; */
+
+  padding: 10px 20px 5px 30px;
+
+
+  /* MARGIN */
+  /* margin-top: 50px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  margin-left: 20px; */
+
+  margin: 50px 10px 30px 20px;
+
+  
+  /* BORDER RADIUS */
+  /* border-top-left-radius: 50px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 10px; */
+
+  border-radius: 50px 5px 30px 10px;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-family: 'Lora', serif;
+}
+
+p span {
+  /* text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: orange;
+  text-decoration-thickness: 2px; */
+
+  text-decoration: underline wavy orange 2px;
+}
+
+.card {
+  background-color: bisque;
+  padding: 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  box-shadow: 3px 5px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.main-page-description {
+  background-color: bisque;
+  width: 100%;
+
+  padding: 20px;
+  border: 10px solid black;
+}
+
+.images {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.images img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+}

@@ -1,0 +1,65 @@
+/* 
+
+
+CSS sintaksė:
+
+selector {
+  property: value;
+}
+
+*/
+
+h1 {
+  color: red;
+  text-decoration: underline;
+}
+
+h4 {
+  color: orange;
+}
+
+div h5 {
+  background-color: orange;
+}
+
+li {
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+ul li {
+  text-decoration: underline;
+}
+
+.color-red {
+  color: red;
+}
+
+a.color-red {
+  background-color: black;
+}
+
+ul .color-red {
+  font-weight: 700;
+}
+
+#special-li-element {
+  color: green;
+}
+
+ol > li {
+  font-style: italic;
+}
+
+ol ul li {
+  color: blue;
+}
+
+li:last-of-type {
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: green;
+  color: white;
+}

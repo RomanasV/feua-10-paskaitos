@@ -1,0 +1,17 @@
+.container {
+  background-color: bisque;
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+
+.child {
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+  position: absolute;
+  transform: translate(-50%, -50%);
+
+  top: 50%;
+  left: 50%;
+}
