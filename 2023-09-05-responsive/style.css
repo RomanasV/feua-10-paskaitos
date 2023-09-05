@@ -1,0 +1,62 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* DESKTOP FIRST pavyzdys */
+.container {
+  background-color: green;
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 799px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 499px) {
+  .container {
+    background-color: purple;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 299px) {
+  .container {
+    background-color: pink;
+    color: black;
+  }
+}
+
+
+
+.container-mobile {
+  background-color: pink;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 299px) {
+  .container-mobile {
+    background-color: purple;
+    color: white;
+  }
+}
+
+@media (min-width: 499px) {
+  .container-mobile {
+    background-color: green;
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 799px) {
+  .container-mobile {
+    width: 70%;
+    padding: 20px;
+  }
+}
