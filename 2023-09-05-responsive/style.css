@@ -60,3 +60,31 @@
     padding: 20px;
   }
 }
+
+
+
+/* DESKTOP FIRST pavyzdys */
+@media (max-width: 799px) {
+
+}
+
+@media (max-width: 499px) {
+  
+}
+
+@media (max-width: 299px) {
+  
+}
+
+/* MOBILE FIRST pavyzdys */
+@media (min-width: 299px) {
+
+}
+
+@media (min-width: 499px) {
+
+}
+
+@media (min-width: 799px) {
+
+}
