@@ -39,6 +39,17 @@
   width: 70%;
   margin: 30px auto;
 }
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    background-color: green;
+    color: white;
+  }
+}
 
 *, *::before, *::after {
   box-sizing: border-box;

@@ -1,3 +1,5 @@
+@use 'responsive';
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -47,6 +49,18 @@ iframe {
   grid-template-columns: 2fr 1fr;
   gap: 30px;
 
+  @include responsive.lg {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  @include responsive.md {
+    grid-template-columns: 5fr 4fr;
+  }
+
+  @include responsive.sm {
+    grid-template-columns: 1fr;
+  }
+
   .main-content {
     display: flex;
     flex-direction: column;
@@ -91,9 +105,33 @@ iframe {
         grid-template-columns: 1fr 1fr;
         column-gap: 30px; */
 
+        @include responsive.lg {
+          flex-wrap: wrap;
+        }
+
+        @include responsive.sm {
+          flex-wrap: nowrap;
+        }
+
+        @include responsive.xs {
+          flex-wrap: wrap;
+        }
+
         .news-article {
           background-color: white;
           width: 50%;
+
+          @include responsive.lg {
+            width: 100%;  
+          }
+
+          @include responsive.sm {
+            width: 50%;
+          }
+
+          @include responsive.xs {
+            width: 100%;
+          }
 
           .article-image {
             width: 100%;
@@ -117,6 +155,10 @@ iframe {
 
         .news-article {
           width: calc((100% - 30px) / 2);
+
+          @include responsive.lg {
+            width: 100%;
+          }
 
           a {
             display: flex;
@@ -243,52 +285,3 @@ iframe {
     }
   }
 }
-
-
-// @media (max-width: 999px) {
-//   .page-content {
-//     grid-template-columns: 3fr 2fr;
-//   }
-
-//   .main-news {
-//     flex-wrap: wrap;
-//   }
-
-//   .main-news .news-article {
-//     width: 100%;
-//   }
-
-//   .secondary-news .news-article {
-//     width: 100%;
-//   }
-// }
-
-// @media (max-width: 799px) {
-//   .page-content {
-//     grid-template-columns: 5fr 4fr;
-//   }
-// }
-
-// @media (max-width: 699px) {
-//   .page-content {
-//     grid-template-columns: 1fr;
-//   }
-
-//   .main-news .news-article {
-//     width: 50%;
-//   }
-
-//   .main-news {
-//     flex-wrap: nowrap;
-//   }
-// }
-
-// @media (max-width: 599px) {
-//   .main-news .news-article {
-//     width: 100%;
-//   }
-  
-//   .main-news {
-//     flex-wrap: wrap;
-//   }
-// }

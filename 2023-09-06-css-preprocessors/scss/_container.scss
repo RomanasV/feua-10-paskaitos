@@ -1,6 +1,39 @@
 @use 'variables/spacing';
+@use 'variables/colors';
+@use 'responsive';
 
 .container {
   width: 70%;
   margin: spacing.$lg auto;
+
+  @include responsive.lg {
+    width: 100%;
+  }
+
+  @include responsive.md {
+    background-color: colors.$green;
+    color: colors.$white;
+  }
+
+  // @media (max-width: 800px) {
+  //   width: 100%;
+  // }
+
+  // @media (max-width: 600px) {
+  //   background-color: colors.$green;
+  //   color: colors.$white;
+  // }
 }
+
+// @media (max-width: 800px) {
+//   .container {
+//     width: 100%;
+//   }
+// }
+
+// @media (max-width: 600px) {
+//   .container {
+//     background-color: colors.$green;
+//     color: colors.$white;
+//   }
+// }

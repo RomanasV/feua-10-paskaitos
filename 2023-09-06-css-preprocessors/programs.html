@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programs Page</title>
+  <link rel="stylesheet" href="programs.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="page-title">Programos</h1>
+
+    <a href="#" class="bg-image">
+      <span class="link-text-wrapper">
+        <span class="color-secondary">Nežinai ką pasirinkti?</span> 
+        <span class="color-black">Spręsk IT testą</span>
+      </span>
+
+      <!-- <img src="arrow.svg" alt=""> -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="33"><path fill="black" d="M3.264 32.528L.76 30.026l13.761-13.761L.762 2.504 3.263 0l16.263 16.264z" fill-rule="evenodd"/></svg>
+    </a>
+
+    <div class="programs-content">
+      <div class="programs-filter">
+        <span class="programs-found">Rastos 62 programos</span>
+
+        <form>
+          <div class="form-control">
+            <label for="course-select">Tema</label>
+            <select id="course-select">
+              <option>Visos</option>
+              <option>Testavimas</option>
+              <option>Programavimas</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label for="location-select">Vieta</label>
+            <select id="location-select">
+              <option>Visos</option>
+              <option>Online</option>
+              <option>Vilnius</option>
+              <option>Kaunas</option>
+            </select>
+          </div>
+          
+          <div class="form-control">
+            <label for="type-select">Tipas</label>
+            <select id="type-select">
+              <option>Visi</option>
+              <option>Tipas 1</option>
+              <option>Tipas 2</option>
+              <option>Tipas 3</option>
+            </select>
+          </div>
+
+          <fieldset>
+            <legend>Laikas</legend>
+
+            <div class="form-control">
+              <input type="checkbox" id="day-time">
+              <label for="day-time">Dienomis</label>
+            </div>
+
+            <div class="form-control">
+              <input type="checkbox" id="night-time">
+              <label for="night-time">Vakarais</label>
+            </div>
+          </fieldset>
+
+          <button class="form-submit">Išvalyti</button>
+
+        </form>
+
+      </div>
+
+      <div class="programs-list">
+        <div class="programs-item">
+          <a href="#">
+            <div class="program-main-info">
+              <img src="https://codeacademy.lt/wp-content/uploads/2021/03/Studijos101_dark-1.svg" alt="" class="program-image">
+              <h2 class="program-title">Studijos 101</h2>
+              <p class="program-description">Duomenų mokslas padės nepasimesti tarp galybės duomenų, priimti pagrįstus sprendimus bei numatyti būsimus įvykius pasitelkiant mašininį mokymąsi.</p>
+            </div>
+
+            <ul class="program-features-list">
+              <li class="program-features-item">Finansuojama UŽT - dirbantiems</li>
+              <li class="program-features-item">Vakarais</li>
+            </ul>
+
+            <span class="program-extra-info">Naujas</span>
+          </a>
+        </div>
+
+        <div class="programs-item">
+          <a href="#">
+            <div class="program-main-info">
+              <img src="https://codeacademy.lt/wp-content/uploads/2021/03/Studijos101_dark-1.svg" alt="" class="program-image">
+              <h2 class="program-title">Duomenų bazės ir analitika pradedantiesiems užimtiems asmenims (223002690)</h2>
+              <p class="program-description">Duomenų mokslas padės nepasimesti tarp galybės duomenų, priimti pagrįstus sprendimus bei numatyti būsimus įvykius pasitelkiant mašininį mokymąsi.</p>
+            </div>
+
+            <ul class="program-features-list">
+              <li class="program-features-item">
+                <!-- <svg class="program-feature-icon" width='16' height='16' xmlns='http://www.w3.org/2000/svg'>
+                  <g fill-rule='evenodd'>
+                    <path d='M13.053 10.127l.001 4.866h-10v-4.866l5 2.172 5-2.172z'/>
+                    <path d='M.983 8l7.071-3.072L15.125 8l-7.071 3.07z'/>
+                  </g>
+                </svg> -->
+                <img class="program-feature-icon" src="hat.svg" alt=""> 
+                <span class="program-feature-title">Finansuojama UŽT - dirbantiems</span>
+              </li>
+              <li class="program-features-item">
+                <img class="program-feature-icon" src="moon.svg" alt=""> 
+                <span class="program-feature-title">Vakarais</span>
+              </li>
+            </ul>
+
+            <span class="program-extra-info">Finansuojama UŽT</span>
+          </a>
+        </div>
+
+        <div class="programs-item">
+          <a href="#">
+            <div class="program-main-info">
+              <img src="https://codeacademy.lt/wp-content/uploads/2021/03/Studijos101_dark-1.svg" alt="" class="program-image">
+              <h2 class="program-title">Dirbtinis Intelektas – pradedančių studijos</h2>
+              <p class="program-description">Ateities technologija, kurią galite mokytis šiandien! Dirbtinio intelekto išmanymas specialistui suteikia milžinišką profesinį ir finansinį pranašumą darbo rinkoje. </p>
+            </div>
+
+            <ul class="program-features-list">
+              <li class="program-features-item">1 + 2 lygis</li>
+              <li class="program-features-item">Vakarais</li>
+            </ul>
+          </a>
+        </div>
+
+        <div class="programs-item">
+          <a href="#">
+            <div class="program-main-info">
+              <img src="https://codeacademy.lt/wp-content/uploads/2021/03/Studijos101_dark-1.svg" alt="" class="program-image">
+              <h2 class="program-title">Business Intelligence studijos</h2>
+              <p class="program-description">Kursas suteikia išsamią įžangą į verslo inteligentijos (BI) sritį, studentai įgauna būtinas žinias ir įgūdžius, reikalingus priimti duomenimis grįstus sprendimus.</p>
+            </div>
+
+            <ul class="program-features-list">
+              <li class="program-features-item">Dienomis</li>
+            </ul>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
