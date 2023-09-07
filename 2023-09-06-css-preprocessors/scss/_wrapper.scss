@@ -1,0 +1,56 @@
+@use 'variables/colors';
+@use 'variables/spacing';
+
+.wrapper {
+  padding: spacing.$lg;
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.half-width {
+    width: 50%;
+  }
+
+  &.bg-dark {
+    background-color: colors.$dark;
+  }
+
+  h2 {
+    font-size: 40px;
+
+    &.color-red {
+      color: colors.$red;
+      transition: 0.3s color;
+      cursor: pointer;
+
+      &:hover {
+        color: colors.$green;
+      }
+    }
+  }
+
+  p {
+    // &::before {
+    //   content: '- ';
+    //   color: colors.$red;
+    // }
+
+    // &.empty {
+    //   &::before {
+    //     content: none;
+    //   }
+    // }
+
+    &:not(.empty) {
+      &::before {
+        content: '- ';
+        color: colors.$red;
+      }
+    }
+
+    &:first-of-type {
+      font-size: 2em;
+    }
+  }
+}
