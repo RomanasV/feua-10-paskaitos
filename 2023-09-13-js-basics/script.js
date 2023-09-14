@@ -21,7 +21,7 @@ console.log(asmensKodas)
 amzius = 31
 console.log(amzius)
 
-vardas = 'Steve'
+vardas = 'John'
 console.log(vardas)
 
 console.log(vardas, typeof vardas)
@@ -37,3 +37,49 @@ console.log(`Hello, ${vardas} ${pavarde}.`)
 // John Doe (amžius 25 m.), asmens kodas: 37878787878, gyvenamasis miestas: Kaunas.
 
 console.log('John Doe (amžius 25 m.), asmens kodas: 37878787878, gyvenamasis miestas: Kaunas.')
+
+console.log(vardas + ' ' + pavarde + ' (amžius ' + amzius + ' m.), asmens kodas: ' + asmensKodas + ', gyvenamasis miestas: ' + miestas + '.')
+console.log(vardas + " " + pavarde + " (amžius " + amzius + " m.), asmens kodas: " + asmensKodas + ", gyvenamasis miestas: " + miestas + ".")
+console.log(`${vardas} ${pavarde} (amžius ${amzius} m.), asmens kodas: ${asmensKodas}, gyvenamasis miestas: ${miestas}.`)
+
+// John said: "Good morning".
+console.log('John said: "Good morning".')
+console.log(`John said: "Good morning".`)
+
+console.log("John said: \"Good morning\".")
+
+// That's my car.
+console.log("That's my car.")
+console.log(`That's my car.`)
+
+console.log('That\'s my car.')
+
+// John said: "That's my car".
+console.log(`John said: "That's my car".`)
+console.log('John said: "That' + "'s my car" + '".')
+
+console.log('John said: "That\'s my car".')
+console.log("John said: \"That's my car\".")
+
+// John `said`: "That's my car".
+console.log('John `said`: "That\'s my car".')
+console.log("John `said`: \"That's my car\".")
+console.log(`John \`said\`: "That's my car".`)
+
+// John \`said\`: "That's my car".
+console.log('John \\`said\\`: "That\'s my car".')
+console.log("John \\`said\\`: \"That's my car\".")
+console.log(`John \\\`said\\\`: "That's my car".`)
+
+let sentence = 'Lorem ipsum dolor SIT amet consectetur adipisicing elit.'
+
+console.log(sentence)
+console.log(sentence.length)
+console.log(sentence[6])
+console.log(sentence.toLowerCase())
+console.log(sentence.toUpperCase())
+console.log(sentence.replaceAll('i', 'o'))
+
+console.log('labas'.length)
+console.log('labas'[2])
+console.log('labas'.toUpperCase())
