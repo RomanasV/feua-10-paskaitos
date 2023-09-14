@@ -83,3 +83,4 @@ console.log(sentence.replaceAll('i', 'o'))
 console.log('labas'.length)
 console.log('labas'[2])
 console.log('labas'.toUpperCase())
+
