@@ -7,7 +7,6 @@ SLAPTAŽODIS:
 3. Jeigu slaptažodis neturi grotažymių (#), tai parašyti: „Slaptažodis privalo turėti grotažymes"
 
 
-
 AMŽIUS
 Pagal amžiu surašyti į kurią klasė eina mokinys:
 1. Iki 6 metų į mokyklą neina.
