@@ -370,3 +370,13 @@ if (personAge >= 18) {
   }
 
 }
+
+
+
+let password = 'fjkshdkljshkfj'
+console.log(password)
+console.log(password.length)
+
+// let age = prompt('Iveskite savo amziu')
+let age = 45
+console.log(age)
