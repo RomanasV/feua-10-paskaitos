@@ -164,3 +164,209 @@ if (light === 'green') {
 } else {
   console.log('Sugedo :(')
 }
+
+
+let word = 'town'
+console.log(word)
+console.log(word[0])
+console.log(word[1])
+console.log(word[2])
+console.log(word[3])
+
+let firstLetter = word[0]
+let thirdLetter = word[2]
+
+// AND operator - &&
+
+// Žodis: town
+console.log(firstLetter === 't' && thirdLetter === 'e')
+console.log('t' === 't' && thirdLetter === 'e')
+console.log(true && thirdLetter === 'e')
+console.log(true && 'w' === 'e')
+console.log(true && false)
+console.log(false)
+
+// Žodis: tree
+console.log(firstLetter === 't' && thirdLetter === 'e')
+console.log('t' === 't' && thirdLetter === 'e')
+console.log(true && thirdLetter === 'e')
+console.log(true && 'e' === 'e')
+console.log(true && true)
+console.log(true)
+
+// Žodis: freedom
+console.log(firstLetter === 't' && thirdLetter === 'e')
+console.log('f' === 't' && thirdLetter === 'e')
+console.log(false && thirdLetter === 'e')
+console.log(false)
+
+// if (firstLetter === 't' && thirdLetter === 'e') {
+//   console.log('Pirma raidė yra t ir trečia raidė yra e')
+// } else {
+//   console.log('Pirma raidė nėra t arba trečia raidė nėra e')
+// }
+
+
+// OR operator - ||
+
+// Žodis: town
+console.log(firstLetter === 't' || thirdLetter === 'e')
+console.log('t' === 't' || thirdLetter === 'e')
+console.log(true || thirdLetter === 'e')
+console.log(true)
+
+// Žodis: tree
+console.log(firstLetter === 't' || thirdLetter === 'e')
+console.log('t' === 't' || thirdLetter === 'e')
+console.log(true || thirdLetter === 'e')
+console.log(true)
+
+// Žodis: freedom
+console.log(firstLetter === 't' || thirdLetter === 'e')
+console.log('f' === 't' || thirdLetter === 'e')
+console.log(false || thirdLetter === 'e')
+console.log(false || 'e' === 'e')
+console.log(false || true)
+console.log(true)
+
+// Žodis: house
+console.log(firstLetter === 't' || thirdLetter === 'e')
+console.log('h' === 't' || thirdLetter === 'e')
+console.log(false || thirdLetter === 'e')
+console.log(false || 'u' === 'e')
+console.log(false || false)
+console.log(false)
+
+// console.log((firstLetter === 't' || thirdLetter === 'e') && (secondLetter === 'o' || fourthLetter === 'm'))
+// console.log((false || true) && (secondLetter === 'o' || fourthLetter === 'm'))
+// console.log(true && (secondLetter === 'o' || fourthLetter === 'm'))
+// console.log(true && (false || false))
+// console.log(true && false)
+// console.log(false)
+
+
+let personAge = 17
+console.log(personAge)
+
+if (personAge >= 18) {
+  console.log('Pirkti galima')
+} else {
+  console.log('Pirkti negalima')
+}
+
+if (personAge < 18) {
+  console.log('Pirkti negalima')
+} else {
+  console.log('Pirkti galima')
+}
+
+
+if (personAge > 17) {
+  console.log('Pirkti galima')
+} else {
+  console.log('Pirkti negalima')
+}
+
+if (personAge <= 17) {
+  console.log('Pirkti negalima')
+} else {
+  console.log('Pirkti galima')
+}
+
+
+personAge = 17
+
+// if (personAge >= 18) {
+//   console.log('Pirkti galima')
+// } else if (personAge < 18 && personAge >= 16) {
+//   console.log('Pirkti galima su tėvų sutikimu')
+// } else {
+//   console.log('Pirkti negalima')
+// }
+
+if (personAge >= 18) {
+  console.log('Pirkti galima')
+} else if (personAge >= 16) {
+  console.log('Pirkti galima su tėvų sutikimu')
+} else {
+  console.log('Pirkti negalima')
+}
+
+if (personAge < 16) {
+  console.log('Pirkti negalima')
+} else if (personAge < 18) {
+  console.log('Pirkti galima su tėvų sutikimu')
+} else {
+  console.log('Pirkti galima')
+}
+
+if (personAge > 17) {
+  console.log('Pirkti galima')
+} else if (personAge > 15) {
+  console.log('Pirkti galima su tėvų sutikimu')
+} else {
+  console.log('Pirkti negalima')
+}
+
+if (personAge <= 15) {
+  console.log('Pirkti negalima')
+} else if (personAge <= 17) {
+  console.log('Pirkti galima su tėvų sutikimu')
+} else {
+  console.log('Pirkti galima')
+}
+
+// NESTING
+personAge = 15
+
+if (personAge < 16) {
+  console.log('Pirkti galima')
+} else {
+
+  // if (personAge >= 18) {
+  //   console.log('Pirkti negalima')
+  // } else {
+  //   console.log('Pirkti galima su tėvų sutikimu')
+  // }
+
+  if (personAge < 18) {
+    console.log('Pirkti galima su tėvų sutikimu')
+  } else {
+    console.log('Pirkti negalima')
+  }
+}
+
+if (personAge >= 16) {
+  // if (personAge >= 18) {
+  //   console.log('Pirkti negalima')
+  // } else {
+  //   console.log('Pirkti galima su tėvų sutikimu')
+  // }
+
+  if (personAge < 18) {
+    console.log('Pirkti galima su tėvų sutikimu')
+  } else {
+    console.log('Pirkti negalima')
+  }
+
+} else {
+  console.log('Pirkti negalima')
+}
+
+if (personAge >= 18) {
+  console.log('Pirkti negalima')
+} else {
+  
+  // if (personAge >= 16) {
+  //   console.log('Pirkti galima su tėvų sutikimu')
+  // } else {
+  //   console.log('Pirkti negalima')
+  // }
+
+  if (personAge < 16) {
+    console.log('Pirkti negalima')
+  } else {
+    console.log('Pirkti galima su tėvų sutikimu')
+  }
+
+}
