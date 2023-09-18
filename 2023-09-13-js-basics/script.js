@@ -510,3 +510,26 @@ if (isNaN(age)) {
 } else {
   console.log('Nurodytas amžius yra per didelis, jis negali būti didesnis už 120 metų.')
 }
+
+// Kokia yra arčiausia Žemės esanti žvaigždė?
+let correctAnswer11 = 'sun'
+
+// Kiek yra 123 + 456
+let correctAnswer12 = 579
+
+let playerAnswer11 = 'sun'
+let playerAnswer12 = 45646
+
+console.log(correctAnswer11 === playerAnswer11)
+console.log(correctAnswer12 === playerAnswer12)
+
+console.log(correctAnswer11 === playerAnswer11 && correctAnswer12 === playerAnswer12)
+
+
+
+
+
+let isLoggedIn = true
+let userName = 'John'
+let time = 5
+let isBirthday = false
