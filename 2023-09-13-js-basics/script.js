@@ -514,6 +514,8 @@ if (isNaN(age)) {
 
 console.groupEnd()
 
+console.groupCollapsed('Tasks 2')
+
 // UŽDUOTIS: sukurti galvosūkį su keletu klausimu
 // PIRMAS LYGIS:
 // 1. Norint patekti į kitą lygį, reikia atsakyti bent į vieną klausimą iš dviejų:
@@ -857,3 +859,100 @@ if (time >= 5 && time < 13) {
 let greetingOutput = greetingText + nameText + birthdayText
 
 console.log(greetingOutput)
+
+console.groupEnd()
+
+console.groupCollapsed('Switch')
+
+
+let switchLight = 'green'
+
+switch (switchLight) {
+  case 'red':
+    console.log('STOP')
+    break
+
+  case 'green':
+    console.log('Galima eiti')
+    break
+
+  case 'yellow':
+    console.log('Pasiruošk')
+    break
+
+  default:
+    console.log('Sugedo :(')
+    break
+}
+
+let grade = 2
+
+switch (grade) {
+  case 1:
+    console.log('Labai blogai')
+    break
+  case 2:
+    console.log('Blogai')
+    break
+  case 3:
+    console.log('Vidutiniškai')
+    break
+  case 4:
+
+  case 5:
+    console.log('Puikiai')
+    break
+  default:
+    console.log('Netinkamai įrašytas skaičius')
+    break
+}
+
+grade = 15
+
+switch (grade) {
+  case 1:
+  case 2:
+    console.log('Labai blogai')
+    break
+  case 3:
+  case 4:
+    console.log('Blogai')
+    break
+  case 5:
+  case 6:
+    console.log('Vidutiniškai')
+    break
+  case 7:
+  case 8:
+    console.log('Gerai')
+    break
+  case 9:
+  case 10:
+    console.log('Puikiai')
+    break
+  default:
+    console.log('Netinkamai įrašytas skaičius')
+    break
+}
+
+let day = 1
+
+switch (day) {
+  case 4:
+    console.log('Mažasis savaitgalis')
+  case 1:
+  case 2:
+  case 3:
+  case 5:
+    console.log('Darbo diena')
+    break
+  case 6:
+  case 7:
+    console.log('Savaitgalis')
+    break
+  default:
+    console.log('Blogai įvesta savaitės diena')
+    break
+}
+
+console.groupEnd()
