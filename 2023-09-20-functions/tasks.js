@@ -9,11 +9,11 @@ function humanToDogYears(humanYears) {
   // let output = humanYears + ' žmogaus metai yra ' + dogYears + ' šuns metai.'
   let output = `${humanYears} žmogaus metai yra ${dogYears} šuns metai.`
 
-  console.log(output)
+ return output
 }
 
-humanToDogYears(15)
-humanToDogYears(10)
+console.log(humanToDogYears(15))
+console.log(humanToDogYears(10))
 
 // 2. Funkciją, kuri skaičiuoja per kiek laiko reikia perskaityti knygą, kad pasiekti užsibrėžtą knygų per metaus skaičių:
 // 2.1. Funkcija priima vieną parametrą: norimų per metus perskaityti knygų skaičių.
@@ -23,11 +23,12 @@ function daysPerBook(books) {
   let days = Math.floor(365 / books)
   let output = `Norint perskaityti ${books} knygų per metus, vienai knygai perskaityti turėsi ${days} dienas.`
 
-  console.log(output)
+  return output
 }
 
-daysPerBook(9)
-daysPerBook(24)
+console.log(daysPerBook(9))
+console.log(daysPerBook(24))
+
 // 3. Funkciją, kuri konvertuoja dienas į savaites:
 // 3.1. Funkcija priima vieną parametrą: dienų skaičių.
 // 3.2. Funkcija grąžina atsakymą tokiu formatu: 35 dienos yra 5 savaitės.
@@ -36,10 +37,10 @@ function daysToWeeks(days) {
   let weeks = (days / 7).toFixed(1)
   let output = `${days} dienos yra ${weeks} savaitės.`
 
-  console.log(output)
+  return output
 }
 
-daysToWeeks(10)
+console.log(daysToWeeks(10))
 
 // 4. Funkciją, kuri konvertuoja dienas į metus:
 // 4.1. Funkcija priima vieną parametrą: dienų skaičių.
@@ -49,10 +50,10 @@ function daysToYears(days) {
   let years = (days / 365).toFixed(2)
   let output = `${days} dienos yra ${years} metai.`
 
-  console.log(output)
+  return output
 }
 
-daysToYears(30)
+console.log(daysToYears(30))
 
 // 5. Funkciją, kuri konvertuoja metus į valandas:
 // 5.1. Funkcija priima vieną parametrą: metų skaičių.
@@ -62,10 +63,10 @@ function yearsToHours(years) {
   let hours = years * 365 * 24
   let output = `${years} metai turi ${hours} valandas.`
   
-  console.log(output)
+  return output
 }
 
-yearsToHours(2)
+console.log(yearsToHours(2))
 
 // 6. Funkciją, kuri konvertuoja mėnesius į valandas:
 // 6.1. Funkcija priima vieną parametrą: mėnesių skaičių.
@@ -75,10 +76,10 @@ function monthsToHours(months) {
   let hours = months * 30 * 24
   let output = `${months} mėnesiai turi ${hours} valandas.`
 
-  console.log(output)
+  return output
 }
 
-monthsToHours(4)
+console.log(monthsToHours(4))
 
 // 7. Funkciją, kuri konvertuoja mėnesius į minutes:
 // 7.1. Funkcija priima vieną parametrą: mėnesių skaičių.
@@ -88,7 +89,7 @@ function monthsToMinutes(months) {
   let minutes = months * 30 * 24 * 60
   let output = `${months} mėnesiai turi ${minutes} minutes.`
 
-  console.log(output)
+  return output
 }
 
-monthsToMinutes(3)
+console.log(monthsToMinutes(3))
