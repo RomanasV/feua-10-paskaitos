@@ -32,28 +32,37 @@
 // 4. Riestiniai skliaustai {} - funkcijos apibrėžimui
 
 function hello() {
-  console.log('Hello, John!')
+  return 'Hello, John!'
 }
 
 // Funkcijos iškvietimas:
 // 1. Funkcijos pavadinimas
 // 2. Paprasti skliaustai ()
 
-hello()
+console.log(hello())
+document.querySelector('h1').textContent = hello()
+let helloText = 'Hello function text: ' + hello()
+console.log(helloText)
 
-
+// function helloWithName(personName, personSurname) {
+//   if (personSurname) {
+//     return `Hello, ${personName} ${personSurname}!`
+//   } else {
+//     return `Hello, ${personName}!`
+//   }
+// }
 
 function helloWithName(personName, personSurname) {
   if (personSurname) {
-    console.log(`Hello, ${personName} ${personSurname}!`)
-  } else {
-    console.log(`Hello, ${personName}!`)
+    return `Hello, ${personName} ${personSurname}!`
   }
+
+  return `Hello, ${personName}!`
 }
 
-helloWithName('John', 'Doe')
-helloWithName('Steve', 'John')
-helloWithName('Peter')
+console.log(helloWithName('John', 'Doe'))
+console.log(helloWithName('Steve', 'John'))
+console.log(helloWithName('Peter'))
 
 
 function getPerimeter(length, width, units = 'vnt') {
@@ -69,20 +78,20 @@ function getPerimeter(length, width, units = 'vnt') {
   // let output = `Perimetras: ${perimeter} ${unitsText}.`
   let output = `Perimetras: ${perimeter} ${units}.`
   
-  console.log(output)
+  return output
 }
 
-getPerimeter(10, 10, 'cm')
-getPerimeter(10, 25, 'm')
-getPerimeter(10, 30, 'km')
-getPerimeter(10, 35, 'mm')
-getPerimeter(10, 40)
-getPerimeter(10, 45)
-getPerimeter(10, 50)
+console.log(getPerimeter(10, 10, 'cm'))
+// getPerimeter(10, 25, 'm')
+// getPerimeter(10, 30, 'km')
+// getPerimeter(10, 35, 'mm')
+// getPerimeter(10, 40)
+// getPerimeter(10, 45)
+// getPerimeter(10, 50)
 
 
 let num = 5
-console.log(num)
+// console.log(num)
 
 function func(globalNum) {
   let num = 6
@@ -90,4 +99,4 @@ function func(globalNum) {
   console.log(globalNum)
 }
 
-func(num)
+// func(num)
