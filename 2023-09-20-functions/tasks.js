@@ -93,3 +93,109 @@ function monthsToMinutes(months) {
 }
 
 console.log(monthsToMinutes(3))
+
+
+// 8. Funkciją, kuri konvertuoja dienas į pasirinktą formatą (minutes, valandas, savaites, mėnesius arba metus):
+// 8.1. Funkcija priima du parametrą: 
+//   8.1.1. Dienų skaičių.
+//   8.1.2. Formatą. Galimos formato reikšmės yra:
+//     8.1.2.1. minutes
+//     8.1.2.2. hours
+//     8.1.2.3. weeks
+//     8.1.2.4. months
+//     8.1.2.5. years
+// 8.2. Funkcija konvertuoja dienas į pasirinktą formatą ir grąžina atsakymą tokiu formatu: 5 days - 7200 minutes.
+
+// function convertDays(days, format) {
+//   if (!days || !format) {
+//     return 'Error: blogai nurodyti duomenys'
+//   }
+
+//   if (format === 'minutes') {
+//     let minutes = days * 24 * 60
+//     return `${days} days - ${minutes} minutes`
+//   }
+
+//   if (format === 'hours') {
+//     let hours = days * 24
+//     return `${days} days - ${hours} hours`
+//   }
+
+//   if (format === 'weeks') {
+//     let weeks = (days / 7).toFixed(1)
+//     return `${days} days - ${weeks} weeks`
+//   }
+
+//   if (format === 'months') {
+//     let months = (days / 30).toFixed(1)
+//     return `${days} days - ${months} months`
+//   }
+
+//   if (format === 'years') {
+//     let years = (days / 365).toFixed(2)
+//     return `${days} days - ${years} years`
+//   }
+
+//   return 'ERROR: neteisingai nurodytas formatas.'
+// }
+
+// function convertDays(days, format) {
+//   if (!days || !format) {
+//     return 'Error: blogai nurodyti duomenys'
+//   }
+
+//   let answer
+
+//   if (format === 'minutes') {
+//     answer = days * 24 * 60
+//   } else if (format === 'hours') {
+//     answer = days * 24
+//   } else if (format === 'weeks') {
+//     answer = (days / 7).toFixed(1)
+//   } else if (format === 'months') {
+//     answer = (days / 30).toFixed(1)
+//   } else if (format === 'years') {
+//     answer = (days / 365).toFixed(2)
+//   } else {
+//     return 'ERROR: neteisingai nurodytas formatas.'
+//   }
+
+//   return `${days} days - ${answer} ${format}`
+// }
+
+function convertDays(days, format) {
+  if (!days || !format) {
+    return 'Error: blogai nurodyti duomenys'
+  }
+
+  let answer
+
+  switch (format) {
+    case 'minutes':
+      answer = days * 24 * 60
+      break
+    case 'hours':
+      answer = days * 24
+      break
+    case 'weeks':
+      answer = (days / 7).toFixed(1)
+      break
+    case 'months':
+      answer = (days / 30).toFixed(1)
+      break
+    case 'years':
+      answer = (days / 365).toFixed(2)
+      break
+    default:
+      return 'ERROR: neteisingai nurodytas formatas.'
+  }
+
+  return `${days} days - ${answer} ${format}`
+}
+
+console.log(convertDays(15, 'minutes'))
+console.log(convertDays(15, 'hours'))
+console.log(convertDays(15, 'weeks'))
+console.log(convertDays(15, 'months'))
+console.log(convertDays(15, 'years'))
+console.log(convertDays(15, 'asdasdasd'))
