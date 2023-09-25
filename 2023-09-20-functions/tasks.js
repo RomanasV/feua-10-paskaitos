@@ -199,3 +199,108 @@ console.log(convertDays(15, 'weeks'))
 console.log(convertDays(15, 'months'))
 console.log(convertDays(15, 'years'))
 console.log(convertDays(15, 'asdasdasd'))
+
+
+// 9. Funkciją, kuri patikrina ar skaičius dalinasi iš kito skaičiaus:
+// 9.1. Funkcija priima du parametrus: 
+//   9.1.1. Skaičių, kuris bus dalinamas (dalinys).
+//   9.1.2. Skaičių, iš kurio bus dalinama (daliklis).
+// 9.2. Funkcija grąžina atsakymą tokiu formatu:
+//   9.2.1. Jeigu dalinasi: 10 dalinasi iš 5.
+//   9.2.2. Skaičius 11 nesidalina iš 5. Liekana yra 1.
+ 
+function checkNumber(unit, divisor) {
+  let answer = unit % divisor
+
+  if (answer === 0) {
+    return `${unit} dalinasi iš ${divisor}`
+  }
+
+  return `Skaičius ${unit} nesidalina iš ${divisor}. Liekana yra ${answer}`
+}
+
+console.log(checkNumber(10, 5))
+console.log(checkNumber(11, 5))
+
+// 10. Funkciją, kuri patikrina ar įvestas tekstas turi porini raidžių skaičių ar neporinį.
+
+function checkText(str) {
+  if (typeof str !== 'string') {
+    return 'ERROR: Įvesti duomenys privalo būti tekstas'
+  }
+
+  let strLength = str.length
+
+  if (strLength % 2 === 0) {
+    return `Tekstas '${str}' turi porini raidžių skaičių`
+  }
+
+  return `Tekstas '${str}' turi neporini raidžių skaičių` 
+}
+
+console.log(checkText('labas'))
+console.log(checkText('sveikass'))
+console.log(checkText())
+console.log(checkText(4564654))
+
+// 11. Funkciją, kuri paima nurodytą simbolį iš žodžio ar sakinio. 
+// 11.1. Funkcija priima du parametrą: tekstą ir kelintą simbolį reikia grąžinti.
+// 11.2. Funkcija grąžina atsakymą tokiu formatu: Teksto "Labas" 3 raidė yra "b".
+
+// 11.3. Jeigu nurodytas skaičius yra didesnis nei tekstas turi simbolių, tai reikia grąžinti error'ą tokiu formatu: Tekstas "Labas" turi 5 simbolius, o jūs nurodėte grąžinti 8.
+
+// 11.4. Patobulinti funkciją, kad būtų galima įrašyti neigiamą skaičių, jeigu norima gauti teksto simbolį skaičiuojant nuo jo galo, o ne nuo priekio.
+
+function getSymbol(str, num) {
+  if (num === 0) {
+    return 'ERROR: reikia įvesti teigiamą arba neigiamą skaičių. Nulis nėra galimas variantas.'
+  }
+
+  if (!str || !num) {
+    return 'ERROR: neteisingai įvesti duomenys'
+  }
+
+  if (typeof str !== 'string') {
+    return 'ERROR: pirmas parametras privalo būti tekstas (string).'
+  }
+
+  if (isNaN(num)) {
+    return 'ERROR: antras parametras privalo būti skaičius (number).'
+  }
+
+  let strLength = str.length
+
+  // let convertedNum = num
+  // if (num < 0) {
+  //   convertedNum = num * -1
+  // }
+
+  let convertedNum = num < 0 ? num : num * -1
+
+  if (convertedNum > strLength) {
+    return `Tekstas "${str}" turi ${strLength} simbolius, o jūs nurodėte grąžinti ${convertedNum}`
+  }
+
+  if (num < 0) {
+    let backSymbol = str.at(num)
+
+    return `Teksto "${str}" ${convertedNum} simbolis skaičiuojant nuo galo yra "${backSymbol}"`
+  }
+  
+  let index = num - 1
+  // let symbol = str[index]
+  // let symbol = str.charAt(index)
+  let symbol = str.at(index)
+
+  return `Teksto "${str}" ${num} simbolis yra "${symbol}".`
+}
+
+console.log(getSymbol('labas', 3))
+console.log(getSymbol('labas', 5))
+console.log(getSymbol('labas', 8))
+console.log(getSymbol('labas', -8))
+console.log(getSymbol('labas', -3))
+console.log(getSymbol('labas'))
+console.log(getSymbol(4, 5))
+console.log(getSymbol('labas', 0))
+
