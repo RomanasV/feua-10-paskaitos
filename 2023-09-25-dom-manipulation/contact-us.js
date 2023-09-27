@@ -1,3 +1,5 @@
+import { createElement } from './utils.js'
+
 let content = document.querySelector('#content')
 
 let container = createElement('container')
@@ -116,14 +118,4 @@ function createMapElement() {
   mapWrapper.append(mapIframe)
 
   return mapWrapper
-}
-
-function createElement(className, tag = 'div', text = '') {
-  let element = document.createElement(tag)
-  if (className) {
-    element.classList.add(className)
-  }
-  element.textContent = text
-
-  return element
 }
