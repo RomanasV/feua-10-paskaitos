@@ -25,7 +25,7 @@ numberDisplay.style.color = 'green'
 
 numbersWrapper.append(numberDisplay, minusButton, plusButton)
 
-plusButton.addEventListener('click', () => {
+plusButton.addEventListener('click', function() {
   num++
   numberDisplay.textContent = num
 
@@ -44,7 +44,7 @@ plusButton.addEventListener('click', () => {
   }
 })
 
-minusButton.addEventListener('click', () => {
+minusButton.addEventListener('click', function() {
   num--
   numberDisplay.textContent = num
 
