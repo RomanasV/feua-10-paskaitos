@@ -60,7 +60,9 @@ for (kintamasis; sąlyga; kintamojo keitimas) {
 
 function task1() {
   for (let i = 1; i <= 100; i++) {
-    console.log(i * 2)
+    let answer = i * 2
+    let output = `${i} * 2 = ${answer}`
+    console.log(output)
   }
 }
 
@@ -68,7 +70,9 @@ function task1() {
 
 function task2() {
   for (let i = 1; i <= 100; i++) {
-    console.log(i * 5)
+    let answer = i * 5
+    let output = `${i} * 5 = ${answer}`
+    console.log(output)
   }
 }
 
@@ -116,4 +120,4 @@ function task71() {
   }
 }
 
-task71()
+// task71()
