@@ -60,12 +60,60 @@ for (kintamasis; sąlyga; kintamojo keitimas) {
 
 function task1() {
   for (let i = 1; i <= 100; i++) {
-    console.log(i)
+    console.log(i * 2)
   }
 }
 
-task1()
+// task1()
 
 function task2() {
-
+  for (let i = 1; i <= 100; i++) {
+    console.log(i * 5)
+  }
 }
+
+// task2()
+
+function task3() {
+  for (let i = 1; i <= 100; i++) {
+    console.log(i + 5)
+  }
+}
+
+// task3()
+
+function task4() {
+  for (let i = 1; i <= 100; i++) {
+    console.log(i - 2)
+  }
+}
+
+// task4()
+
+function task5() {
+  for (let i = 1; i <= 100; i++) {
+    // console.log(i * i)
+    // console.log(Math.pow(i, 2))
+    console.log(i**2)
+  }
+}
+
+// task5()
+
+function task6() {
+  for (let i = 1; i <= 100; i++) {
+    // console.log(i * i * i)
+    // console.log(Math.pow(i, 3))
+    console.log(i**3)
+  }
+}
+
+// task6()
+
+function task71() {
+  for (let i = 100; i >= 1; i--) {
+    console.log(i * 2)
+  }
+}
+
+task71()
