@@ -26,6 +26,11 @@
 // 14.1. Sukurti naują mygtuką, kurio teksta būtų „Įrašyti balą".
 // 14.2. Paspaudus šį mygtuką, reikia paimti reikšmę iš h3 elemento ir sukurti naują li elementą bei jį prepend'inti prie ul elemento.
 
+// 15. Į li elementą įrašytas balas turi būti tos pačios spalvos kaip ir h3 elemente.
+
+// 16.1. Sukurti mygtuką ir jį įdėti į li elementą.
+// 16.2. Paspaudus šį mygtuką, li elementas su balu turi būti ištrintas.
+
 let initialNum = 5
 
 let num = initialNum
@@ -99,8 +104,16 @@ resetButton.addEventListener('click', function() {
 
 addGradeButton.addEventListener('click', function() {
   let gradeItem = document.createElement('li')
-  gradeItem.textContent = num
   gradeItem.style.color = numberDisplay.style.color
+
+  let removeButton = document.createElement('button')
+  removeButton.textContent = 'x'
+
+  removeButton.addEventListener('click', function() {
+    gradeItem.remove()
+  })
+
+  gradeItem.append(num, removeButton)
 
   gradeList.prepend(gradeItem)
 })
