@@ -15,3 +15,21 @@ ANTRA DALIS:
 1. Sukurti div elementą, kuris turės id „students-list".
 2. Kiekvieną kartą pridavus formą (submit), turi būti sukurtas naujas div elementas su klase „student-item" ir pridedamas į „students-list" elemento pradžią.
 3. Duomenys apie studentą turi būti įdėti į „student-item" elementą.
+
+4. Sukūrus studentą, turi iššokti <span> elementas, kuris informuoja apie studento sukūrimą: „Sukurtas studentas (Vardas Pavardė)". Šis span elementas dingsta po 5 sekundžių.
+5. Šalia range tipo laukelio, sukurti span (arba output) elementą ir jame atvaizduoti range laukelio reikšmę jam keičiantis.
+
+TREČIA DALIS:
+1. Vietoje el. pašto ir tel. numerio rodyti tik žvaigždutes „****".
+2. Kiekviename „student-item" elemente sukurti mygtuką „Rodyti asmens duomenis".
+3. Paspaudus šį mygtuką:
+    3.1. Parodyti to studento el. paštą ir tel. numerį.
+    3.2. Pakeist mygtuko tekstą į „Slėpti asmens duomenis".
+4. Jeigu asmens duomenys yra rodomi, tai paspaudus mygtuką:
+    4.1. Paslėpti asmens el. paštą ir tel. numerį.
+    4.2. Mygtuko tekstą pakeisti į „Rodyti asmens duomenis".
+
+KETVIRTA DALIS (studento ištrynimas):
+1. Prie kiekvieno sukurti studento elemento pridėti mygtuką „Ištrinti studentą".
+2. Paspaudus šį mygtuką, studento elementas yra ištrinamas.
+3. Ištrynus studentą, turi iššokti <span> elementas, kuris informuoja apie studento ištrynimą: „Studentas (Vardas Pavardė) sėkmingai ištrintas.". Šis span elementas dingsta po 5 sekundžių.
