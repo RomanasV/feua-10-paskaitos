@@ -115,6 +115,8 @@ console.log(slicedCountries12)
 
 console.groupEnd()
 
+console.groupCollapsed('Pirmos užduoties 29 ir 30 dalies sprendimas')
+
 const arr = ['start', 2, 3, 5, 11, 155, 888, '15x', 6789, -5564, 'obuolys', -51, 55, 0, 33, 789, 6543, 1, 'trylika', 444, 321, 654, -1, 987, -333, -321, 'end']
 console.log(arr)
 
@@ -146,3 +148,28 @@ console.log(task230last)
 // const task230all = [task230first, task230last].flat()
 const task230all = [...task230first, ...task230last]
 console.log(task230all)
+
+console.groupEnd()
+
+
+// SPLICE - modifikuoja (mutuoja) originalų masyvą
+let nums = [  1  ,   2  ,   3  ,   4  ,   5  ,   6  ,   7  ,   10];
+//         0     1      2      3      4      5      6      7     8
+//        -8    -7     -6     -5     -4     -3     -2     -1
+
+console.log(nums)
+
+// const splicedNums = nums.splice(2)
+// const splicedNums = nums.splice(0, 2)
+// const splicedNums = nums.splice(2, 1)
+// const splicedNums = nums.splice(2, 3)
+// const splicedNums = nums.splice(-1)
+// const splicedNums = nums.splice(-3, 2)
+// const splicedNums = nums.splice(-3, 2, 2)
+// const splicedNums = nums.splice(3, 2, 'Trys')
+// const splicedNums = nums.splice(2, 1, 2.5)
+// const splicedNums = nums.splice(2, 0, 2.5)
+const splicedNums = nums.splice(2, 0, 2.5, 2.7, 2.8)
+
+console.log(splicedNums)
+console.log(nums)
