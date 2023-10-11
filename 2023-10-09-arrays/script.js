@@ -173,3 +173,41 @@ const splicedNums = nums.splice(2, 0, 2.5, 2.7, 2.8)
 
 console.log(splicedNums)
 console.log(nums)
+
+
+// FILTER
+let originalNums = [1, 2, 3, 4, 5, 6, 7, 8, 10];
+console.log(originalNums);
+
+// let filteredNums = []
+// for (let i = 0; i < originalNums.length; i++) {
+//   if (originalNums[i] > 5) {
+//     filteredNums.push(originalNums[i])
+//   }
+// }
+// console.log(filteredNums)
+
+// const filteredNums = originalNums.filter(function(num, index, arr) {
+//   console.log('Array: ', arr)
+//   console.log('Index: ' + index)
+//   console.log('Item: ' + num)
+//   console.log(num > 5)
+
+//   return num > 5
+// })
+
+const filteredNums = originalNums.filter(function(num){
+  return num > 5
+})
+console.log(filteredNums)
+
+const filteredNums2 = originalNums.filter(function(num){
+  return num > 3 && num < 8
+})
+console.log(filteredNums2)
+
+// const filteredNums3 = originalNums.filter((num) => {
+//   return num >= 7 && num % 2 === 0
+// })
+const filteredNums3 = originalNums.filter(num => num >= 7 && num % 2 === 0)
+console.log(filteredNums3)
