@@ -211,3 +211,68 @@ console.log(filteredNums2)
 // })
 const filteredNums3 = originalNums.filter(num => num >= 7 && num % 2 === 0)
 console.log(filteredNums3)
+
+// MAP
+const numsArr = [1, 4, 9, 12]
+
+for (let i = 0; i < numsArr.length; i++) {
+  console.log('Index: ' + i)
+  console.log('for ciklas: ' + numsArr[i])
+}
+
+// numsArr.map(function(num, index, originalArray) {
+//   console.log('Index: ' + index)
+//   console.log('Map ciklas: ' + num)
+//   console.log('Original array: ', originalArray)
+// })
+
+numsArr.map((num, index, originalArray) => {
+  console.log('Index: ' + index)
+  console.log('Map ciklas: ' + num)
+  console.log('Original array: ', originalArray)
+})
+
+numsArr.forEach((num, index, originalArray) => {
+  console.log('Index: ' + index)
+  console.log('ForEach ciklas: ' + num)
+  console.log('Original array: ', originalArray)
+})
+
+// map - grąžina reikšmę
+// forEach - negrąžina reikšmę
+
+// const mapNums = numsArr.map((num) => {
+//   return num * num
+// })
+
+const mapNums = numsArr.map(num => num * num).reverse()
+
+console.log(numsArr)
+console.log(mapNums)
+
+const forEachNums = numsArr.forEach(num => num * num)
+
+console.log(forEachNums)
+
+let dataArr = ['text', 454, 'kitas text', 77841, 454, 'labas']
+console.log(dataArr)
+
+function task41a() {
+  for (let i = 0; i < dataArr.length; i++) {
+    if (typeof dataArr[i] === 'number') {
+      console.log(dataArr[i])
+    }
+  }
+}
+
+// task41a()
+
+function task41b() {
+  dataArr.forEach((item) => {
+    if (typeof item === 'number') {
+      console.log(item)
+    }
+  })
+}
+
+// task41b()
