@@ -151,7 +151,7 @@ console.log(task230all)
 
 console.groupEnd()
 
-
+console.groupCollapsed()
 // SPLICE - modifikuoja (mutuoja) originalų masyvą
 let nums = [  1  ,   2  ,   3  ,   4  ,   5  ,   6  ,   7  ,   10];
 //         0     1      2      3      4      5      6      7     8
@@ -254,6 +254,7 @@ const forEachNums = numsArr.forEach(num => num * num)
 
 console.log(forEachNums)
 
+
 let dataArr = ['text', 454, 'kitas text', 77841, 454, 'labas']
 console.log(dataArr)
 
@@ -276,3 +277,115 @@ function task41b() {
 }
 
 // task41b()
+
+console.groupEnd()
+
+const data = ['start', 2, 3, 5, 11, 155, 888, '15x', 6789, -5564, 'obuolys', -51, 55, 0, 33, 789, 6543, 1, 'trylika', 444, 321, 654, -1, 987, -333, -321, 'end']
+
+// 4.7. Tik skaičius (number tipo duomenis) ir pridėti tekstą su jų pačių indeksais, pvz.:
+//   "Index: 0, Number: 2"
+//   "Index: 1, Number: 3"
+//   "Index: 2, Number: 5"
+//   Ir t.t.
+
+function task47a(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] === 'number') {
+      const output = `Index: ${i}, Number: ${arr[i]}`
+      console.log(output)
+    }
+  }
+}
+
+// task47a(data)
+
+function task47b(arr) {
+  console.log(arr)
+
+  arr.forEach((item, index) => {
+    if (typeof item === 'number') {
+      const output = `Index: ${index}, Number: ${item}`
+      console.log(output)
+    }
+  })
+}
+
+// task47b(data)
+
+// 4.9. Tik skaičius (number tipo duomenis) ir juos padauginti iš ankstesnio nario, pvz.:
+//   - Pirmo skaičiaus dauginti nereikia.
+//   - Antrą skaičių dauginti iš pirmo.
+//   - Trečią skaičių dauginti iš antro.
+//   - Ketvirta skaičių dauginti iš trečio.
+//   - Penktą skaičių dauginti iš ketvirto.
+//   Ir t.t.
+
+function task49a(arr) {
+  const numsArr = arr.filter(item => typeof item === 'number')
+  
+  for (let i = 0; i < numsArr.length; i++) {
+    const currentNum = numsArr[i]
+
+    if (i === 0) {
+      console.log(currentNum)
+    } else {
+      const previousNum = numsArr[i - 1]
+      const answer = currentNum * previousNum
+      const output = `${currentNum} * ${previousNum} = ${answer}`
+
+      console.log(output)
+    }
+  }
+}
+
+// task49a(data)
+
+function task49b(arr) {
+  const numsArr = arr.filter(item => typeof item === 'number')
+
+  numsArr.map((num, index) => {
+    if (index === 0) {
+      console.log(num)
+    } else {
+      const previousNum = numsArr[index - 1]
+      const answer = num * previousNum
+      const output = `${num} * ${previousNum} = ${answer}`
+
+      console.log(output)
+    }
+  })
+}
+
+// task49b(data)
+
+// 4.15. Tik tekstą (string tipo duomenis) ir prie kiekvieno teksto parašyti tarp kokių narių masyve jis yra, pvz.: "Word obuolys is between -5564 and -51 in the array".
+
+function task415a(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    const item = arr[i]
+
+    if (typeof item === 'string') {
+
+      if (i === 0) {
+        const nextItem = arr[i + 1]
+        const output = `Word ${item} is the first in the array and next item the array is ${nextItem}.`
+        
+        console.log(output)
+      } else if (i === arr.length - 1) {
+        const previousItem = arr[i - 1]
+        const output = `Word ${item} is the last in the array and previous item the array is ${previousItem}.`
+        
+        console.log(output)
+      } else {
+        const previousItem = arr[i - 1]
+        const nextItem = arr[i + 1]
+        
+        const output = `Word ${item} is between ${previousItem} and ${nextItem} in the array`
+        
+        console.log(output)
+      }
+    }
+  }
+}
+
+task415a(data)
