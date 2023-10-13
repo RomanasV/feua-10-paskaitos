@@ -361,29 +361,38 @@ function task49b(arr) {
 // 4.15. Tik tekstą (string tipo duomenis) ir prie kiekvieno teksto parašyti tarp kokių narių masyve jis yra, pvz.: "Word obuolys is between -5564 and -51 in the array".
 
 function task415a(arr) {
+  const ulElement = document.querySelector('#task-415')
+
   for (let i = 0; i < arr.length; i++) {
     const item = arr[i]
 
     if (typeof item === 'string') {
 
+      let output = ''
+
       if (i === 0) {
+
         const nextItem = arr[i + 1]
-        const output = `Word ${item} is the first in the array and next item the array is ${nextItem}.`
-        
-        console.log(output)
+        output = `Word ${item} is the first in the array and next item the array is ${nextItem}.` 
+
       } else if (i === arr.length - 1) {
+
         const previousItem = arr[i - 1]
-        const output = `Word ${item} is the last in the array and previous item the array is ${previousItem}.`
-        
-        console.log(output)
+        output = `Word ${item} is the last in the array and previous item the array is ${previousItem}.` 
+
       } else {
+
         const previousItem = arr[i - 1]
         const nextItem = arr[i + 1]
         
-        const output = `Word ${item} is between ${previousItem} and ${nextItem} in the array`
-        
-        console.log(output)
+        output = `Word ${item} is between ${previousItem} and ${nextItem} in the array`       
+
       }
+
+      const liElement = document.createElement('li')
+      liElement.textContent = output
+
+      ulElement.append(liElement)
     }
   }
 }
