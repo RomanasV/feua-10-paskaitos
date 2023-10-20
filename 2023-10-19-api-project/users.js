@@ -19,7 +19,7 @@ async function init() {
       const userItem = document.createElement('li')
       const userLink = document.createElement('a')
       userLink.textContent = `${user.name} (${postsCount})`
-      userLink.href = './user.html'
+      userLink.href = './user.html?user_id=' + user.id
 
       userItem.append(userLink)
       usersList.append(userItem)

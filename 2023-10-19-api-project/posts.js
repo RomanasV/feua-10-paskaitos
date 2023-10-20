@@ -17,8 +17,8 @@ function init() {
         const commentsCount = post.comments.length
         const postItem = document.createElement('li')
         const postLink = document.createElement('a')
-        postLink.textContent = `${post.title} (${commentsCount})`
-        postLink.href = './post.html'
+        postLink.textContent = `${post.id}. ${post.title} (${commentsCount})`
+        postLink.href = './post.html?post_id=' + post.id
 
         const userLink = document.createElement('a')
         userLink.textContent = userName

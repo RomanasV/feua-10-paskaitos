@@ -24,7 +24,7 @@ async function init() {
     const albumItem = document.createElement('div')
     albumItem.classList.add('album-item')
     const albumLink = document.createElement('a')
-    albumLink.href = './album.html'
+    albumLink.href = './album.html?album_id=' + album.id
 
     const albumTitle = document.createElement('h2')
     albumTitle.textContent = `${album.title} (${photosCount})`
