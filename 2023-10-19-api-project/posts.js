@@ -29,7 +29,6 @@ function init() {
         postsList.append(postItem)
       })
 
-      console.log(postsList)
     })
 }
 
