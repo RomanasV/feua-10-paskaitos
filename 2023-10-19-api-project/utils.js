@@ -5,3 +5,7 @@ export function getUrlParams(param) {
 
   return paramValue
 }
+
+export function firstLetterUpperCase(str) {
+  return str.at(0).toUpperCase() + str.slice(1)
+}

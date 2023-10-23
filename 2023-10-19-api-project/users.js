@@ -1,8 +1,11 @@
+import header from "./header.js"
+
 async function init() {
   const res = await fetch('https://jsonplaceholder.typicode.com/users?_embed=posts')
   const users = await res.json()
 
   const content = document.querySelector('#content')
+  content.before(header())
 
   const pageTitle = document.createElement('h1')
   pageTitle.textContent = 'No users :('

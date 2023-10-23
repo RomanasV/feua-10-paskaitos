@@ -1,7 +1,10 @@
+import header from "./header.js"
+
 async function init() {
   const albums = await getAlbums()
 
   const content = document.querySelector('#content')
+  content.before(header())
 
   const pageTitle = document.createElement('h1')
   pageTitle.textContent = 'Albums:'
